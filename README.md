@@ -11,10 +11,14 @@ A complete C application for reading and displaying data from the HDC2010 temper
 - Environmental condition classification
 - Graceful shutdown handling
 
-## Building
+# Clean previous build
+make clean
 
-```bash
-make          # Build the application
-make debug    # Build with debug symbols
-make release  # Build with optimizations
-make clean    # Clean build files
+# Build the project
+make
+
+# Run with default settings (simulation mode)
+./build/hdc2010_app
+
+# Run with specific options
+./build/hdc2010_app -m json -i 1000 -c 5
