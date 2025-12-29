@@ -8,7 +8,7 @@
 
 A professional-grade C application for reading temperature and humidity data from the Texas Instruments HDC2010 environmental sensor. The application supports both real hardware interaction and realistic data simulation modes, making it ideal for development, testing, and production environments.
 
-## 📋 Table of Contents
+##  Table of Contents
 - [Features](#-features)
 - [Architecture](#-architecture)
 - [Hardware Setup](#-hardware-setup)
@@ -22,7 +22,7 @@ A professional-grade C application for reading temperature and humidity data fro
 - [Troubleshooting](#-troubleshooting)
 - [License](#-license)
 
-## ✨ Features
+##  Features
 
 - **Dual Operation Modes**
   - Real HDC2010 sensor integration via I2C
@@ -42,7 +42,7 @@ A professional-grade C application for reading temperature and humidity data fro
   - Signal capture (SIGINT, SIGTERM)
   - Continuous or limited sampling modes
 
-## 🏗 Architecture
+##  Architecture
 
 ```mermaid
 graph TD
@@ -68,7 +68,7 @@ graph TD
     P -->|Yes| Q[Cleanup & Exit]
 ```
 
-## 🔌 Hardware Setup
+##  Hardware Setup
 
 ### HDC2010 Sensor Connection
 ```
@@ -90,7 +90,7 @@ sudo i2cdetect -y 1
 # Should show device at address 0x40 (HDC2010 default)
 ```
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 ```bash
@@ -119,7 +119,7 @@ make
 sudo make install
 ```
 
-## 🚀 Usage
+##  Usage
 
 ### Basic Operations
 ```bash
@@ -144,7 +144,7 @@ sudo make install
 | `-v` | - | Verbose output | `false` |
 | `-h` | - | Display help message | - |
 
-## 📊 Output Formats
+##  Output Formats
 
 ### Console Output
 ```
@@ -184,7 +184,7 @@ timestamp,temp_c,temp_f,humidity,dew_point,temp_status,hum_status
 2024-01-15 14:30:45,22.5,72.5,45.2,10.1,COMFORTABLE,OPTIMAL
 ```
 
-## 📁 Project Structure
+##  Project Structure
 ```
 hdc2010_project/
 ├── src/
@@ -201,7 +201,7 @@ hdc2010_project/
 └── README.md             # This file
 ```
 
-## 🔨 Build System
+##  Build System
 
 ### Available Make Targets
 ```bash
@@ -220,7 +220,7 @@ make docs         # Generate documentation
 make CC=arm-linux-gnueabihf-gcc
 ```
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Core Functions
 ```c
@@ -258,7 +258,7 @@ typedef enum {
 } hdc2010_status_t;
 ```
 
-## 📝 Examples
+##  Examples
 
 ### Example 1: Continuous Console Monitoring
 ```bash
@@ -284,7 +284,7 @@ typedef enum {
 sudo ./build/hdc2010_app -r -v -i 2000
 ```
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -331,11 +331,11 @@ make debug
 gdb ./build/hdc2010_app
 ```
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -345,13 +345,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Texas Instruments for the HDC2010 sensor
 - Linux I2C development community
 - All contributors and testers
 
-## 📞 Support
+##  Support
 
 For issues, questions, or feature requests:
 - Open an issue on GitHub
@@ -360,6 +360,6 @@ For issues, questions, or feature requests:
 
 ---
 
-**Project Maintainer**: Your Name  
+**Project Maintainer**: SSR
 **Version**: 1.0.0  
 **Last Updated**: January 2024
