@@ -2,7 +2,7 @@
 #include <time.h>
 #include <string.h>
 #include "display.h"
-#include "random_simulator.h"  // Include this to get the function declaration
+#include "random_simulator.h"  // Include this to get the function declaration with proper path & check once the header file aviable
 
 static display_mode_t current_display_mode = DISPLAY_CONSOLE;
 static int csv_header_printed = 0;
